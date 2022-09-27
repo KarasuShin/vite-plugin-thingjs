@@ -1,0 +1,36 @@
+{
+  "name": "vite-plugin-thingjs",
+  "version": "0.1.0",
+  "packageManager": "pnpm@7.12.2",
+  "description": "thingjs local development plugin for Vite",
+  "keywords": [
+    "vite",
+    "thingjs"
+  ],
+  "author": "KarasuShin <karasu.shing@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "release": "bumpp --commit --push --tag && npm publish"
+  },
+  "devDependencies": {
+    "@karasushin/eslint-config": "^0.1.9",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.24.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.3"
+  }
+}

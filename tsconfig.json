@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "module": "ESNext",
     "target": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "esModuleInterop": true,
+    "lib": ["DOM", "ESNext"],
     "strict": true,
-    "strictNullChecks": true,
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "noUnusedParameters": true
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "allowUmdGlobalAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "jsx": "react-jsx"
   },
-  "include": [
-    "src/**/*",
-    "*.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "examples",
-    "dist"
-  ]
+  "include": ["src", "*.ts", "*.html"]
 }

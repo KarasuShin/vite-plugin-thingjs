@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-thingjs",
-  "version": "0.2.1",
+  "version": "0.2.0",
   "packageManager": "pnpm@7.12.2",
   "description": "thingjs local development plugin for Vite",
   "keywords": [
